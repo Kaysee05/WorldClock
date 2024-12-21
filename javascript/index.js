@@ -15,6 +15,7 @@ losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss[<small>]A[</sma
 // Paris
 let parisElement = document.querySelector("#paris");
 if (parisElement) {
+    
 let parisDateElement = parisElement.querySelector(".date");
 let parisTimeElement = parisElement.querySelector(".time");
 let parisTime = moment().tz("Europe/Paris");
@@ -41,7 +42,7 @@ function updateCity(event) {
     </div>
     <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format("A")}
     </small></div>
-    <div>
+    </div>
     `;
 }
 
